@@ -2,7 +2,14 @@
   "name": "learning-outside-in",
   "version": "0.1.0",
   "private": true,
+  "devDependencies": {
+    "axios-mock-adapter": "^1.15.0",
+    "jest-serializer-html": "^5.0.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1"
+  },
   "dependencies": {
+    "axios": "^0.18.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-scripts": "1.1.4"
@@ -10,7 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom --setupTestFrameworkScriptFile src/test/setupTests.js",
     "eject": "react-scripts eject"
   }
 }
