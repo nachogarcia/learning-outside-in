@@ -1,5 +1,9 @@
+import * as axios from 'axios'
+import { API_URL } from 'src/config'
+
 export default class PhraseService {
   async getRandomPhrases(numberOfPhrases){
-    throw new Error('NOT IMPLEMENTED')
+    const response = await axios.get(`${API_URL}/random/${numberOfPhrases}`)
+    return response.data.value
   }
 }
