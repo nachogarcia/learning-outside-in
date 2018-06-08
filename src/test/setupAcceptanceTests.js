@@ -10,7 +10,7 @@ import store from 'src/store'
 function mockApi() {
   const axiosMocked = new MockAdapter(axios)
 
-  axiosMocked.onGet(`${API_URL}/random/5`).reply(200, randomPhraseResponse)
+  axiosMocked.onGet(`${API_URL}/jokes/random/5`).reply(200, randomPhraseResponse)
 }
 
 mockApi()

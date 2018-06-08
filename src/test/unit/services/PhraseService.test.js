@@ -11,7 +11,7 @@ const axiosMocked = new MockAdapter(axios)
 describe('Phrase Service', () => {
   it('gets random phrases', async () => {
     const numberOfPhrases = 5
-    axiosMocked.onGet(`${API_URL}/random/${numberOfPhrases}`).reply(200, randomPhraseResponse)
+    axiosMocked.onGet(`${API_URL}/jokes/random/${numberOfPhrases}`).reply(200, randomPhraseResponse)
 
     const phrases = await phraseService.getRandomPhrases(numberOfPhrases)
 

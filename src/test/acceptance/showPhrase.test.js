@@ -9,7 +9,7 @@ describe('App', () => {
   })
 
   it('shows some random Chuck Norris phrases after clicking its button', () => {
-    const phraseTexts = randomPhraseResponse.value.map(phrase => phrase.value)
+    const phraseTexts = randomPhraseResponse.value.map(phrase => phrase.joke)
     const phraseComponents = app.find('.phrase')
 
     phraseTexts.forEach((phraseText, index) => {
