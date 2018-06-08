@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 import Phrase from 'src/components/Phrase'
 import dispatcher from 'src/dispatcher'
 import './App.css'
@@ -14,7 +14,10 @@ export class App extends Component {
 
     return (
       <div className="App">
-        {phrases}
+        <h1>Chuck Norris phrases</h1>
+        <div className='phraseContainer'>
+          {phrases}
+        </div>
       </div>
     )
   }
@@ -22,7 +25,7 @@ export class App extends Component {
 
 export function mapStateToProps(state) {
   return {
-    phrases: state.phrase.list
+    phrases: state.phrase.list,
   }
 }
 
