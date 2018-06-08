@@ -1,4 +1,4 @@
-const randomPharseResponse = {
+const randomPhraseResponse = {
   "type": "success",
   "value": [
     { "id": 1, "joke": "Joke 1" },
@@ -6,4 +6,4 @@ const randomPharseResponse = {
     { "id": 9, "joke": "Joke 9" },
   ],
 }
-export default randomPharseResponse
+export default randomPhraseResponse

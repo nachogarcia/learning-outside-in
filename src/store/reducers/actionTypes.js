@@ -1,0 +1,1 @@
+export const GET_RANDOM_PHRASES = 'GET_RANDOM_PHRASES'
